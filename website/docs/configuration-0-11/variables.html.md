@@ -29,11 +29,11 @@ Input variables can be defined as follows:
 
 ```hcl
 variable "key" {
-  type = "string"
+  type = string
 }
 
 variable "images" {
-  type = "map"
+  type = map
 
   default = {
     us-east-1 = "image-1234"
@@ -42,7 +42,7 @@ variable "images" {
 }
 
 variable "zones" {
-  type = "list"
+  type = list
   default = ["us-east-1a", "us-east-1b"]
 }
 ```
@@ -92,7 +92,7 @@ mapping where the key is the variable name. An example is:
 
 ```hcl
 variable "key" {
-  type    = "string"
+  type    = string
   default = "value"
 }
 ```
@@ -101,7 +101,7 @@ A multi-line string value can be provided using heredoc syntax.
 
 ```hcl
 variable "long_key" {
-  type = "string"
+  type = string
   default = <<EOF
 This is a long key.
 Running over several lines.
@@ -124,7 +124,7 @@ as follows:
 
 ```hcl
 variable "images" {
-  type    = "map"
+  type    = map
   default = {
     "us-east-1" = "image-1234"
     "us-west-2" = "image-4567"
@@ -139,7 +139,7 @@ with zero. For example:
 
 ```hcl
 variable "users" {
-  type    = "list"
+  type    = list
   default = ["admin", "ubuntu"]
 }
 ```
@@ -217,7 +217,7 @@ For a list variable like so:
 
 ```hcl
 variable "somelist" {
-  type = "list"
+  type = list
 }
 ```
 
@@ -231,7 +231,7 @@ Similarly, for a map declared like:
 
 ```hcl
 variable "somemap" {
-  type = "map"
+  type = map
 }
 ```
 
